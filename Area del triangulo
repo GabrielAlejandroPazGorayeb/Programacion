@@ -1,0 +1,21 @@
+//Nombre: Area del triangulo
+//Alumno: GABRIEL ALEJANDRO PAZ GORAYEB
+//Fecha: 03-09-2015
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std; //DECLARA EL TECLADO Y EL MONITOR COMO LA UNICA SALIDA ESTANDAR
+
+void main ()
+{
+	float A,B,C; //DECLARACION DE LAS VARIABLES
+	cout<<"Ingrese base: "; //PIDE LA VARIABLE
+	cin>>B; //ASIGNACION DE VARIABLE
+	cout<<"Ingrese altura: "; //PIDE LA VARIABLE
+	cin>>C; //ASIGNACION DE VARIABLE
+	C=(A*B)/2;//LA FORMULA CON LA QUE VOY A TRABAJAR
+    cout<<"El resultado es: "<<C; //RESULTADO  DE LA OPERACION
+	getch(); //DETIENE LA PANTALLA
+}
