@@ -1,0 +1,38 @@
+//Alumno: Gabriel Alejandro Paz Gorayeb
+//Fecha: 03-09-2015
+
+#include "stdafx.h"  //LIBRERIA
+#include <iostream>  //LIBRERIA
+#include "conio.h"   //LIBRERIA
+#include "math.h"    //LIBRERIA
+
+using namespace std; //INGRESO Y SALIDO DE DATOS MEDIANTE EL MONITOR Y TECLADO
+
+void ecuacion(float a, float b, float c, float d, float e, float f, float &x, float &y);//DECLARACION DE VARIABLES
+void main()
+{
+	float a, b, c, d, e, f, m, n;      //DECLARACION DE VARIABLES
+	cout<<"Ingrese A: ";               //SALIDA DE DATOS
+	cin>>a;                            //ENTRADA DE DATOS
+	cout<<"Ingrese B: ";               //SALIDA DE DATOS
+	cin>>b;                            //ENTRADA DE DATOS 
+	cout<<"Ingrese C: ";               //SALIDA DE DATOS
+	cin>>c;                            //ENTRADA DE DATOS   
+	cout<<"Ingrese D: ";               //SALIDA DE DATOS
+	cin>>d;                            //ENTRADA DE DATOS  
+	cout<<"Ingrese E: ";               //SALIDA DE DATOS 
+	cin>>e;                            //ENTRADA DE DATOS  
+	cout<<"Ingrese F: ";               //SALIDA DE DATOS
+	cin>>f;                            //ENTRADA DE DATOS 
+	ecuacion(a, b, c, d, e, f, m, n); 
+	cout<<"\nEl resultado x = "<<m;    //SALIDA DE DATOS
+	cout<<"\nEl resultado y = "<<n;    //SALIDA DE DATOS
+	getch();                           //DETIENE LA PANTALLA
+}
+
+void ecuacion(float a, float b, float c, float d, float e, float f, float &x, float &y) //FUNCION
+{
+	y = (a*f - c*d)/(b*d -a*e); //FORMULA DE LA OPERACION
+	x = (-c - b*y)/a;           //FORMULA DE LA OPERACION
+	getch();                    //DETIENE LA PANTALLA
+}
