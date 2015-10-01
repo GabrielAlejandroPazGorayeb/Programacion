@@ -1,0 +1,31 @@
+// PROG.IVA cpp : Defines the entry point for the console application.
+//Alumno: GABRIEL ALEJANDRO PAZ GORAYEB
+//Fecha: 01-10-2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std;
+void main ()
+
+{
+	float sueldo, iva, sueldomin;
+	int N, i;
+	cout<<"Ingrese el numero de empleados";
+	cin>>N;
+	sueldomin=2*1656;
+	for (i=1;i<=N;i++)
+	{
+		cout<<"Ingrese el sueldo del empleado: ";
+		cin>>sueldo;
+		iva=0;
+		if (sueldo>sueldomin)
+			iva=sueldo*0.13;
+		cout<<"El impuesto a pagar del empleado: "<<i<<"; "<< iva<<endl;
+		suma=suma+iva;
+
+}
+	cout<<"El impuesto total a pagar es: "<<suma<<endl:
+    getch();
