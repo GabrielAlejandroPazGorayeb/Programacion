@@ -1,0 +1,66 @@
+// Ejemplo2Menu.cpp : Defines the entry point for the console application.
+// Alumno: Gabriel Alejandro Paz Gorayeb
+// Fecha: 15-10-15
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+#include "Math.h"
+
+
+using namespace std;
+
+float promedio(int n);
+float mayor();
+float suma(int numero);
+
+void main()
+{
+	float Promedio;
+	int n, opcion;
+	// Menu
+	do {
+		//Desplegar las opciones
+		cout<<"\t\t Menu \n";
+		cout<<"\t\t ==== \n";
+		cout<<"1. Promedio de N numeros\n";
+		cout<<"2. Sumar los digitos de un numero\n";
+		cout<<"0. Salir\n";
+		cout<<"Opcion: ";
+		cin>>opcion;
+		// Condicional multiple
+		switch (opcion)
+		{
+		case 1: cout<<"Ingrese la cantidad de numeros a sumar: ";
+			    cin>> n;
+				Promedio=promedio(n);
+				cout<<"El promedio es : "<<Promedio;
+				break;
+		case 0: cout<<"Saliendo del Menu";
+			    break;
+		default: cout<< "ERROR DE OPCION";
+			    break;
+        
+        }
+		getch();
+		system("cls");
+	}while (opcion!=0);
+	getch();
+
+}
+float promedio(int n)
+{
+	float s=0;
+	float dato;
+	for (int i=1;i<=n;i++)
+	{ 
+		cout<<"Ingrese el numero "<<i<<" : ";
+		cin>>dato;
+		s=s+dato
+	}
+return s/n;
+}
+
+
+
